@@ -7,7 +7,9 @@ import bodyParser from 'body-parser';
 
 //after importing initialize express
 const app = express();
-app.use(cors());
+app.use(cors({
+      origin: 'https://mahatodolist.netlify.app'
+}));
 
 
 //these below two lines need to be done taking the help of body-parser ORRR,, only express can also do the work
